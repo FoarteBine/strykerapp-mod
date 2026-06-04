@@ -1,0 +1,24 @@
+.class public Lorg/bouncycastle/asn1/cmp/PKIBody;
+.super Lorg/bouncycastle/asn1/ASN1Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/bouncycastle/asn1/ASN1Choice;
+
+
+# virtual methods
+.method public final c()Lorg/bouncycastle/asn1/ASN1Primitive;
+    .locals 4
+
+    new-instance v0, Lorg/bouncycastle/asn1/DERTaggedObject;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    invoke-direct {v0, v3, v1, v2}, Lorg/bouncycastle/asn1/DERTaggedObject;-><init>(ZILorg/bouncycastle/asn1/ASN1Encodable;)V
+
+    return-object v0
+.end method

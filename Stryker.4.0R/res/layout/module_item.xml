@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/item" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:elevation="6.0dp" app:cardCornerRadius="16.0dp" app:rippleColor="#54595959" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.google.android.material.textview.MaterialTextView android:textSize="22.0dp" android:textStyle="bold" android:id="@id/module_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Module name" />
+                <com.google.android.material.textview.MaterialTextView android:textSize="12.0dp" android:textStyle="italic" android:id="@id/module_author_and_ver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="By Zalexdev (ver 1.0)" />` 
+                <com.google.android.material.textview.MaterialTextView android:textSize="15.0dp" android:id="@id/module_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="10.0dp" android:text="Module description" />` </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/module_indicator" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" app:indicatorColor="@color/blue2" />
+                <ImageView android:id="@id/module_install" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/download" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

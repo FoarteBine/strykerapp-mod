@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/update" android:layout_width="250.0dp" android:layout_height="250.0dp" android:layout_marginBottom="20.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/update" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/prog_update" android:layout_width="350.0dp" android:layout_height="wrap_content" app:trackCornerRadius="15.0dp" />
+    <TextView android:gravity="center" android:id="@id/update_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Starting..." />
+    <com.google.android.material.button.MaterialButton android:textStyle="bold" android:gravity="center" android:id="@id/welcome" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/tryagain" />
+</LinearLayout>

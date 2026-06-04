@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/add" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="ADD TARGET" app:cornerRadius="15.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/site_list" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/nosites" android:layout_width="250.0dp" android:layout_height="250.0dp" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/nothing" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/nosites_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Targets not found. Please start new scan via button in the top" />
+</LinearLayout>

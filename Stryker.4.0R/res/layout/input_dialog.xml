@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:minWidth="200.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/input_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="Input title" android:lineSpacingExtra="5.0dp" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:hint="Enter value" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:hintTextColor="#ff676262">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/getValue" android:layout_width="match_parent" android:layout_height="55.0dp" android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:id="@id/dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Cancel" app:icon="@drawable/close" />
+            <com.google.android.material.button.MaterialButton android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="OK" app:icon="@drawable/done" app:iconGravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

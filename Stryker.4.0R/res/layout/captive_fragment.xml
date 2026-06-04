@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_captive" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_margin="20.0dp" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/globe" />
+        <TextView android:textSize="28.0dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Captive Portal" />
+        <com.google.android.material.card.MaterialCardView android:id="@id/hotspot_warning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:elevation="1.0dp" app:cardBackgroundColor="@color/captive_toggle_stop" app:cardCornerRadius="15.0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                <ImageView android:layout_gravity="center" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/error" app:tint="@color/white" />
+                <TextView android:textColor="@color/white" android:layout_gravity="center" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="To continue with this section. First you need to turn on the hotspot. Click to setup" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:hint="Hotspot interface" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:startIconDrawable="@drawable/wifi_channel" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView android:id="@id/interface_dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/mode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:hint="CaptivePortal mode" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:startIconDrawable="@drawable/ic_outline_help" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView android:id="@id/mode_dropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/ip_address_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:hint="Gateway IP (not necessary)" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/ip_address" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+            <com.google.android.material.button.MaterialButton android:textColor="@color/captive_toggle_stop" android:layout_gravity="center" android:id="@id/remove_captive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Remove" android:layout_weight="1.0" android:textAllCaps="false" app:cornerRadius="15.0dp" app:icon="@drawable/delete" app:iconTint="@color/captive_toggle_stop" app:rippleColor="#66e91e63" app:strokeColor="@color/captive_toggle_stop" style="@style/Widget.Material3.Button.OutlinedButton.Icon" />
+            <com.google.android.material.button.MaterialButton android:enabled="false" android:textColor="@color/blue2" android:layout_gravity="center" android:id="@id/captive_portal_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Start" android:layout_weight="1.0" android:textAllCaps="false" app:cornerRadius="15.0dp" app:icon="@drawable/run" app:iconTint="@color/blue2" app:strokeColor="@color/blue2" style="@style/Widget.Material3.Button.OutlinedButton.Icon" />
+            <com.google.android.material.button.MaterialButton android:textColor="@color/green" android:layout_gravity="center" android:id="@id/captive_creds_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Creds" android:layout_weight="1.0" android:textAllCaps="false" app:cornerRadius="15.0dp" app:icon="@drawable/key" app:iconTint="@color/green" app:rippleColor="#5c2e7d32" app:strokeColor="@color/green" style="@style/Widget.Material3.Button.OutlinedButton.Icon" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@drawable/devices" android:layout_marginStart="10.0dp" />
+            <TextView android:textSize="20.0dp" android:id="@id/clients_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Active clients not found." />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/hotspot_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/nuclei_linear" android:layout_width="220.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:layout_centerInParent="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="220.0dp" android:layout_height="220.0dp" android:layout_marginTop="20.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/webscan" />
+        <TextView android:textSize="25.0dp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nuclei\nFramework" />
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/install_nuclei" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Install" app:cornerRadius="15.0dp" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="center" android:id="@id/prog" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:indeterminate="true" app:trackCornerRadius="15.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dp" android:gravity="center" android:id="@id/nuclei_init" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_marginTop="20.0dp" android:text="Initializing..." android:layout_below="@id/nuclei_linear" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/warn_nuclei" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="765.0dp" android:layout_alignParentBottom="true" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="5.0dp" android:src="@drawable/error" android:tint="#ffa000" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="Please do not exit the application and this tab due installation! This may affect the correct installation!" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

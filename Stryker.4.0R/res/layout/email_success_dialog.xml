@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:cardCornerRadius="25.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/email" app:tint="@color/blue2" />
+        <TextView android:textSize="24.0dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="Email verification" />
+        <TextView android:textSize="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Verification email was sent to your email address. Please check your email and verify your account." />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

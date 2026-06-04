@@ -1,0 +1,3 @@
+.class public Lorg/bouncycastle/cert/jcajce/JcaX509v1CertificateBuilder;
+.super Lorg/bouncycastle/cert/X509v1CertificateBuilder;
+.source "SourceFile"

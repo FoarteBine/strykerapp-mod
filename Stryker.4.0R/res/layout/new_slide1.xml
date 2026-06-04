@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="30.0dp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Welcome to Stryker!" />
+        <TextView android:textSize="20.0dp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stryker - is a new generation of mobile pentest app! Check your devices and networks with a click!" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/slide_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" app:useMaterialThemeColors="true" />
+            <TextView android:autoLink="web" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I agree with with Privacy Policy" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/slide_checkbox2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:useMaterialThemeColors="true" />
+            <TextView android:autoLink="web" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I agree with with Terms And Conditions" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/slide_checkbox3" android:layout_width="wrap_content" android:layout_height="wrap_content" app:useMaterialThemeColors="true" />
+            <TextView android:autoLink="web" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I agree to follow the Ethical Hacking Standards" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:enabled="false" android:layout_gravity="center" android:id="@id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="Start installation" app:cornerRadius="15.0dp" app:icon="@drawable/bolt" />
+    </LinearLayout>
+</ScrollView>

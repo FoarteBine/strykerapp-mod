@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0dp" android:gravity="center" android:id="@id/exploit_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="Exploit title" />
+    <TextView android:textSize="12.0dp" android:gravity="center" android:id="@id/exploit_description" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exploit description" />
+    <TextView android:textSize="8.0dp" android:textColorLink="@color/blue2" android:gravity="center" android:autoLink="all" android:id="@id/exploit_reference" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exploit reference" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/values_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:textSize="16.0dp" android:layout_gravity="center" android:id="@id/back_button" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_margin="10.0dp" android:text="Back" android:layout_weight="1.0" app:cornerRadius="15.0dp" app:icon="@drawable/arrow_back" app:iconSize="30.0dp" app:strokeColor="@color/blue2" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <com.google.android.material.button.MaterialButton android:textSize="16.0dp" android:layout_gravity="center" android:id="@id/launch_button" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_margin="10.0dp" android:text="Getting values..." android:layout_weight="1.0" app:cornerRadius="15.0dp" app:icon="@drawable/rocket_launch" app:iconGravity="end" app:iconSize="30.0dp" app:strokeColor="@color/blue2" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </LinearLayout>
+</LinearLayout>

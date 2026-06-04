@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:enabled="false" android:layout_gravity="center" android:id="@id/bypass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Try to bypass" android:textAllCaps="false" />
+    <TextView android:id="@id/arp_table_parsed" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

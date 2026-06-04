@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/routerpanel_expand" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="true">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ip_ranges" android:paddingStart="15.0dp" />
+                <com.google.android.material.card.MaterialCardView android:id="@id/router_ranges_card" android:scrollbars="vertical" android:layout_width="180.0dp" android:layout_height="80.0dp" android:layout_marginTop="10.0dp" android:layout_marginStart="10.0dp" android:elevation="5.0dp" android:backgroundTint="@color/nightrec" app:cardCornerRadius="10.0dp">
+                    <TextView android:textSize="11.0sp" android:id="@id/router_ranges_text" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ports" android:paddingStart="15.0dp" />
+                <com.google.android.material.card.MaterialCardView android:id="@id/router_port_card" android:scrollbars="vertical" android:layout_width="75.0dp" android:layout_height="80.0dp" android:layout_marginTop="10.0dp" android:layout_marginStart="10.0dp" android:elevation="5.0dp" android:backgroundTint="@color/nightrec" app:cardCornerRadius="10.0dp">
+                    <TextView android:textSize="11.0dp" android:id="@id/router_ports" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/router_save" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/save" android:tint="@color/grey" android:layout_marginEnd="5.0dp" />
+                    <ImageView android:id="@id/router_settings_icon" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/settings" android:tint="@color/grey" />
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton android:textSize="12.0dp" android:id="@id/start_scanner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start" android:singleLine="true" app:icon="@drawable/run" app:iconSize="12.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+    <LinearLayout android:id="@id/router_toggle" android:layout_width="match_parent" android:layout_height="25.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/router_toggle_img" android:layout_width="match_parent" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:tint="@color/blue2" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/routerscan_items" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/ping_progressbar" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" app:indicatorColor="@color/blue2" app:trackCornerRadius="5.0dp" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/roterscan_progressbar" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" app:indicatorColor="@color/blue" app:trackCornerRadius="5.0dp" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp">
+            <TextView android:id="@id/rs_threads" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="..." android:layout_weight="1.0" android:layout_marginStart="5.0dp" />
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/circle" android:tint="@color/green" />
+            <TextView android:id="@id/rs_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="0" />
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/circle" android:tint="@color/red" />
+            <TextView android:id="@id/rs_pinged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

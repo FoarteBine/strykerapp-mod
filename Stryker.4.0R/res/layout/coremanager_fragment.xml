@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/search_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:endIconDrawable="@drawable/search" app:endIconMode="custom" app:endIconTint="@color/blue2" style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Search" android:singleLine="true" android:inputType="textNoSuggestions" android:importantForAutofill="no" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progressbar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="5.0dp" android:indeterminate="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:indicatorColor="@color/blue" app:trackCornerRadius="5.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/apktoogle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="APK" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" app:buttonTint="@color/blue2" app:useMaterialThemeColors="true" />
+        <com.google.android.material.radiobutton.MaterialRadioButton android:id="@id/piptoggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PIP 3" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="10.0dp" app:buttonTint="@color/blue2" />
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/not_found" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/nothing" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/package_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" />
+</LinearLayout>

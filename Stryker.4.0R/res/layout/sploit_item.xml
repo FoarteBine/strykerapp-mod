@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/item" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" android:elevation="18.0dp" app:cardCornerRadius="8.0dp" app:strokeColor="#da515151" app:strokeWidth="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp" android:baselineAligned="false">
+        <ImageView android:layout_gravity="center" android:id="@id/sploit_icon" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/database" android:tint="@color/nightblack" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp" android:layout_weight="1.0">
+            <TextView android:id="@id/sploit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="Sploit title" android:layout_toRightOf="@id/iconl" android:layout_toEndOf="@id/iconl" />
+            <TextView android:textSize="12.0dp" android:id="@id/sploit_platform" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sploit platform" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center" android:id="@id/run_sploit" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/save" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="260.0dp" android:layout_height="260.0dp" android:layout_marginTop="50.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottie_view" android:layout_width="260.0dp" android:layout_height="260.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/hello" />
+        <ImageView android:id="@id/logo" android:padding="70.0dp" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/ic_white" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" app:tint="@color/logo" />
+    </RelativeLayout>
+    <com.zalexdev.stryker.appintro.CustomViewPager android:id="@id/intro_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" />
+</LinearLayout>

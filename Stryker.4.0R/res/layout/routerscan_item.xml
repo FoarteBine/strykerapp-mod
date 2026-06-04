@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5.0dp">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dp">
+                <ImageView android:id="@id/routerscan_prog" android:layout_width="5.0dp" android:layout_height="50.0dp" android:src="@drawable/rectangle" android:tint="#c5c5c5" android:layout_marginStart="5.0dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp">
+                    <TextView android:textSize="18.0dp" android:textStyle="bold" android:id="@id/router_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ip address" android:textIsSelectable="true" />
+                    <TextView android:textSize="12.0dp" android:id="@id/router_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/initializing" />
+                </LinearLayout>
+                <TextView android:textSize="15.0dp" android:id="@id/router_model" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Model" android:textIsSelectable="true" android:layout_marginStart="15.0dp" />
+                <TextView android:textSize="15.0dp" android:id="@id/router_ssid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ssid" android:textIsSelectable="true" android:layout_marginStart="15.0dp" />
+                <TextView android:textSize="15.0dp" android:id="@id/router_mac" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mac" android:textIsSelectable="true" android:layout_marginStart="15.0dp" />
+                <TextView android:textSize="15.0dp" android:id="@id/router_auth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auth" android:textIsSelectable="true" android:layout_marginStart="15.0dp" />
+                <TextView android:textSize="15.0dp" android:id="@id/router_password" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" android:textIsSelectable="true" android:layout_marginStart="15.0dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

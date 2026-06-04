@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_margin="10.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/brutehydra" />
+        <TextView android:textSize="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="HTC-Hydra" />
+        <TextView android:textSize="12.0dp" android:gravity="center" android:id="@id/hydra_init" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="Initializing..." />
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/install_hydra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="10.0dp" android:text="Install" app:cornerRadius="15.0dp" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="center" android:id="@id/prog" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" android:indeterminate="true" app:trackCornerRadius="15.0dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

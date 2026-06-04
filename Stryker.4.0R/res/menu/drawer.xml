@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/main_item" android:title="Main features">
+        <menu>
+            <item android:icon="@drawable/home" android:id="@id/dasboard_item" android:title="@string/dashboard" />
+            <item android:icon="@drawable/terminal" android:id="@id/terminal_item" android:title="Terminal" />
+            <item android:icon="@drawable/wifi" android:id="@id/wifi_item" android:title="@string/wifi" />
+            <item android:icon="@drawable/lan" android:id="@id/lan_item" android:title="@string/local_network" />
+            <item android:icon="@drawable/password" android:id="@id/macchanger_item" android:title="MAC Changer" />
+            <item android:icon="@drawable/webscan" android:id="@id/website_item" android:title="Web Scanner" />
+            <item android:icon="@drawable/motion_blur" android:id="@id/exploits_item" android:title="@string/exploit_hub" />
+            <item android:icon="@drawable/scanner" android:id="@id/nmap_item" android:title="@string/nmap" />
+            <item android:icon="@drawable/storage" android:id="@id/hs_item" android:title="@string/handshakes" />
+            <item android:icon="@drawable/tune" android:id="@id/manager_item" android:title="@string/core_manager" />
+            <item android:icon="@drawable/vnc" android:id="@id/vnc_item" android:title="VNC" />
+            <item android:icon="@drawable/alt_route" android:id="@id/captiveportal_item" android:title="Captive Portal" />
+        </menu>
+    </item>
+    <item android:id="@id/module_item" android:title="Tools">
+        <menu>
+            <item android:icon="@drawable/adaps_search" android:id="@id/adaps_item" android:title="Adapters Suggester" />
+            <item android:icon="@drawable/shield" android:id="@id/metasploit_item" android:title="Metasploit Framework" />
+            <item android:icon="@drawable/map" android:id="@id/geomac_item" android:title="GeoMac" />
+            <item android:icon="@drawable/database" android:id="@id/searchsploit_item" android:title="Searchsploit" />
+            <item android:icon="@drawable/router" android:id="@id/router_scan_item" android:title="RScan" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:backgroundTint="@color/nightwhite" app:cardCornerRadius="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@color/blue" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/password" android:layout_marginStart="10.0dp" app:tint="@color/white" />
+            <TextView android:textSize="18.0dp" android:textColor="@color/white" android:padding="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Stryker Change MAC" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center" android:id="@id/exit" android:background="@color/blue" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/close" android:layout_marginEnd="10.0dp" app:tint="@color/white" />
+        </LinearLayout>
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="match_parent" android:indeterminate="true" app:indicatorColor="@color/blue" app:trackColor="#92a3ff" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/nightblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Old MAC:" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="26.0dp" android:textColor="@color/nightblack" android:gravity="center" android:id="@id/old_mac" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="XX:XX:XX:XX:XX:XX" />
+        <TextView android:textSize="16.0dp" android:textColor="@color/nightblack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="New MAC:" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+        <TextView android:textSize="26.0dp" android:textColor="@color/nightblack" android:gravity="center" android:id="@id/new_mac" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="XX:XX:XX:XX:XX:XX" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

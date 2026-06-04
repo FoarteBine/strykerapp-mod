@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="about">About</string>
+    <string name="about_app">About</string>
+    <string name="about_message">This software uses map data provided by OpenStreetMap.org</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="allowed_shortcuts_n_ip_ip_address_n_port_port_n_gw_gateway_n_mask_subnet_mask_n_mac_mac_address_n_ncustom_shortcuts_n_customtext_app_will_ask_you_to_enter_variable_manually">"Allowed shortcuts:
+{IP} - IP address
+{PORT} - port
+{GW} - gateway
+{MASK} - subnet mask
+{MAC} - MAC address
+
+Custom shortcuts:
+{CUSTOMTEXT} - the application will ask you to enter the variable manually"</string>
+    <string name="alpine_linux_termux_exit">Now you can work with Termux in Alpine Linux! To return to the Termux environment, it will be enough to write exit!</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">Stryker</string>
+    <string name="app_setting">Settings</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="application_page_modules_updates_here">Application page, modules, updates are here!</string>
+    <string name="arguments">Arguments</string>
+    <string name="authkey">AuthKey received</string>
+    <string name="auto_connect">AUTO-CONNECT</string>
+    <string name="auto_nupdate">"Auto
+Refresh"</string>
+    <string name="automatically_check_for_updates">Automatically check for updates</string>
+    <string name="base">OSM base layer</string>
+    <string name="base_nl">Netherlands base overlay</string>
+    <string name="bing">Bing</string>
+    <string name="bit">Unfortunately, your device is 32-bit and does not support the required library! Please try other features of the app!</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
+    <string name="bottomsheet_action_expand">Expand the bottom sheet</string>
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
+    <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
+    <string name="br_failed">Password not found!</string>
+    <string name="bruteforce_password">Password Brute Force</string>
+    <string name="bruteforce_pin">Brute force PIN</string>
+    <string name="cancel">Cancel</string>
+    <string name="cant_airodump">Unable to start airodump-ng!..</string>
+    <string name="cant_find_netw">"Sorry, I couldn't find the network. Swipe down to try again"</string>
+    <string name="captured_be_here">Caught handshakes will be here!</string>
+    <string name="catch_all_commands_output_and_errors">Catch all output of commands and errors</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="check">Check</string>
+    <string name="check1">Permission request</string>
+    <string name="check2">Checking Permissions</string>
+    <string name="check3">Architecture check</string>
+    <string name="check4">Checking Drivers</string>
+    <string name="check_3wifi_database_for_nearest_wifi">Check 3wifi database for nearby hotspots</string>
+    <string name="check_admin">Check the panel for vulnerabilities</string>
+    <string name="check_camera">Check RTSP for vulnerabilities</string>
+    <string name="check_n3wifi">"Check
+3WiFI"</string>
+    <string name="check_rdp">Check RDP for vulnerabilities</string>
+    <string name="check_smb">Check SMB for vulnerabilities</string>
+    <string name="checking_inet">Checking internet connection…</string>
+    <string name="choose_opt">Choose option</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="click_to_copy">Click to copy!</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">2970da46728a42d0a93f2fae9929897b</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="compass">Compass</string>
+    <string name="confirm">Confirmation</string>
+    <string name="connect_with_custom_pin">Connect with a PIN</string>
+    <string name="coose_port">Choose port</string>
+    <string name="copied">Copied to clipboard!</string>
+    <string name="core_manager">Manager</string>
+    <string name="custom_deauth">Now:</string>
+    <string name="custom_scan">Now:</string>
+    <string name="customvalue">Enter custom value</string>
+    <string name="cut20">Cut for 20 seconds</string>
+    <string name="cut_dev">Cut device</string>
+    <string name="cyclemap">Cycle Map</string>
+    <string name="dark_theme">Night theme</string>
+    <string name="dashboard">Home</string>
+    <string name="deauth">Deauthing…</string>
+    <string name="deauth_clients">Client Deauthing</string>
+    <string name="deauthing">Deauthing…</string>
+    <string name="debug_desv">"Hi, I'm sorry you're having a problem! Please go through the entire installation path! After send off the file /Stryker/log.txt to the developer!"</string>
+    <string name="debug_mode_on">Debug mode enabled!</string>
+    <string name="debug_mode_title">Debug mode</string>
+    <string name="default_web_client_id">693560063747-ufb5han8bv56jli6o6sq1cooplftfjmt.apps.googleusercontent.com</string>
+    <string name="delcache">Removing cache…</string>
+    <string name="delchroot">Removing the old chroot…</string>
+    <string name="delete_nstryker">"Remove
+Striker"</string>
+    <string name="delete_stryker_and_chroot">Remove Stryker and chroot.</string>
+    <string name="deleting">Deleting…</string>
+    <string name="detect_os">Detect OS</string>
+    <string name="detect_services">Service discovery</string>
+    <string name="dev_issue">, this is a device error</string>
+    <string name="disable_mon">Turn off monitoring mode</string>
+    <string name="do_not_turn_off_the_wifi_for_pixie_dust">Do not turn off the wifi module during attacks</string>
+    <string name="donate">Donate</string>
+    <string name="donate_desc">With the help of your donations, the application will be able to develop further and pay for hosting and so on...</string>
+    <string name="donation">Donation</string>
+    <string name="doo">to</string>
+    <string name="download_apk">Loading app…</string>
+    <string name="download_chroot">Loading chroot…</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="efab_efab_illegal_optional_properties">"One or more optional attributes for an ExpandableFab were set, but didn't meet the criteria below: 
+
+ Optional Attribute || Criteria 
+ orientation || must be a value of enum class Orientation 
+ efabColor || must be an integer color or color state list 
+ efabIcon || must be a color or drawable resource 
+ efabSize || must be [FabSize.MINI], [FabSize.NORMAL], [FabSize.AUTO] or [FabSize.CUSTOM]. FabSize.CUSTOM should be used when setting the size of the ExpandableFab's layout_width and layout_height to a custom value manually. 
+ efabEnabled || must be a boolean 
+ iconRotationDeg || must be a floating point number 
+ fabOptionSize || must be [FabSize.MINI], [FabSize.NORMAL], [FabSize.AUTO] or [FabSize.CUSTOM]. FabSize.CUSTOM should be used when setting the size of the FabOptions' layout_width and layout_height to a custom value manually. 
+ fabOptionPosition || must be a value of enum class FabOptionPosition 
+ firstFabOptionMarginPx || must be a floating point number 
+ successiveFabOptionMarginPx || must be a floating point number 
+ openingAnimationDurationMs || must be a positive long number 
+ closingAnimationDurationMs || must be a positive long number 
+ closingAnticipateTension || must be a positive float number 
+"</string>
+    <string name="efab_faboption_illegal_optional_properties">"One or more optional attributes for a FabOption were set, but didn't meet the criteria below: 
+
+ Optional Attribute || Criteria 
+ orientation || must be a value of enum class Orientation 
+ fabOptionColor || must be an integer color or color state list 
+ fabOptionIcon || must be a color or drawable resource 
+ fabOptionEnabled || must be a boolean 
+ openingAnimationDurationMs || must be a positive long number 
+ closingAnimationDurationMs || must be a positive long number 
+ openingOvershootTension || must be a positive long number 
+"</string>
+    <string name="efab_label_illegal_optional_properties">"One or more optional attributes for a Label were set, but didn't meet the criteria below: 
+
+ labelText || must be a CharSequence 
+ labelTextColor || must be an integer color or color state list 
+ labelTextSize || must be a positive floating point number 
+ labelBackgroundColor || must be an integer color or color state list 
+ labelElevation || must be a positive floating point number 
+ labelEnabled || must be a boolean 
+ position || must be a value of enum class [LabelPosition] 
+ marginPx || must be a positive floating point number 
+ translationXPx || must be a floating point number 
+ visibleToHiddenAnimationDurationMs || must be a positive long number 
+ hiddenToVisibleAnimationDurationMs || must be a positive long number 
+ overshootTension || must be a positive floating point number 
+"</string>
+    <string name="efab_layout_illegal_optional_properties">"One or more optional attributes for an ExpandableFab were set, but didn't meet the criteria below: 
+
+ Optional Attribute || Criteria 
+ overlayOpeningAnimationDurationMs || must be a positive long number 
+ overlayClosingAnimationDurationMs || must be a positive long number 
+ expandableFabOpeningAnimationDurationMs || must be a positive long number 
+ expandableFabClosingAnimationDurationMs || must be a positive long number 
+ fabOptionOpeningAnimationDurationMs || must be a positive long number 
+ fabOptionClosingAnimationDurationMs || must be a positive long number 
+ labelVisibleToHiddenAnimationDurationMs || must be a positive long number 
+ labelHiddenToVisibleAnimationDurationMs || must be a positive long number 
+"</string>
+    <string name="efab_layout_multiple_efabs">You can only set one ExpandableFab per orientation in an ExpandableFabLayout (you set 2 or more for the %s orientation).</string>
+    <string name="efab_layout_must_be_child_of_expandablefab_layout">Overlays, ExpandableFabs and FabOptions must be children of an [ExpandableFabLayout] in order to function properly. Please see the documentation for how to correctly use the ExpandableFab widget.</string>
+    <string name="efab_overlay_illegal_optional_properties">"One or more optional attributes for an Overlay were set, but didn't meet the criteria below: 
+
+ Optional Attribute || Criteria 
+ orientation || must be a value of enum class Orientation 
+ overlayColor || must be an integer color or color state list 
+ overlayAlpha || must be a positive floating point number 
+ openingAnimationDurationMs || must be a positive long number 
+ closingAnimationDurationMs || must be a positive long number 
+"</string>
+    <string name="enon">Received E-Nonce on target…</string>
+    <string name="enter_bssid_mac">Enter BSSID (MAC)</string>
+    <string name="enter_mac">Enter MAC address</string>
+    <string name="enter_package_name">Enter package name</string>
+    <string name="enter_pin">Enter pin</string>
+    <string name="error">Error</string>
+    <string name="error_a11y_label">Error: invalid</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_inter">Interface error</string>
+    <string name="error_interface">Interface error</string>
+    <string name="error_monit">Unable to put interfaces into monitor mode…</string>
+    <string name="error_mount">Mount error! Make sure you have the Stryker folder!</string>
+    <string name="error_no_word">"Error!
+No dictionaries in Stryker/wordlist!"</string>
+    <string name="error_save_hs">Error moving handshake. Looks like someone deleted the directory…</string>
+    <string name="error_upload">File upload error!</string>
+    <string name="ew_path">(/sdcard/Stryker/exploits/)</string>
+    <string name="ew_welcome">"Welcome to the Add Exploit Wizard, please follow all the instructions and follow all the steps to successfully add. Click the Continue button to proceed to the next step. "</string>
+    <string name="example_n_exploit_successful_marked_as_good_result_nif_no_such_msg_failed">"Example:
+[vuln] Target vulnreable - flagged as a good result.
+If there is no such message, an error"</string>
+    <string name="example_n_myexploit_t_ip_p_port_threads_n_n_n_n_works_as_customtext_and_you_will_be_able_to_enter_it_before_scan_starts">"Example:
+./myexploit -t {IP} -p {PORT} --threads {N}
+
+{N} works like {CUSTOMTEXT} and you can enter it before the scan starts!"</string>
+    <string name="exploit_hub">Exploits</string>
+    <string name="exploit_list">List of exploits</string>
+    <string name="exploit_wizard">Exploit Wizard</string>
+    <string name="exploit_wizard_step_1_of_2">Exploit Wizard (Step 1 of 2)</string>
+    <string name="exploit_wizard_step_2_of_2">Exploit Wizard (Step 2 of 2)</string>
+    <string name="exploits">In the exploits section, you can add your own exploits and scripts, and then use them for their intended purpose. Automatic parameter detection supported</string>
+    <string name="exploits_title">Exploits</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="exs">Exploits…</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="fail">Download failed, please check your internet connection</string>
+    <string name="failed_info">Failed to get information</string>
+    <string name="failed_try">"Didn't work, try again!"</string>
+    <string name="fast_scan_less_ports">Fast scan (fewer ports)</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="fiets_nl">OpenFietsKaart overlay</string>
+    <string name="file_was_uploaded">The file has already been uploaded before!</string>
+    <string name="fill_rs">Please, fill all fields!</string>
+    <string name="finished">Finished</string>
+    <string name="finished_inst">Installation completed!</string>
+    <string name="first_fix_message">Got the first fix</string>
+    <string name="format_distance_feet">%s ft</string>
+    <string name="format_distance_kilometers">%s km</string>
+    <string name="format_distance_meters">%s m</string>
+    <string name="format_distance_miles">%s mi</string>
+    <string name="format_distance_nautical_miles">%s nm</string>
+    <string name="format_distance_only_foot">ft</string>
+    <string name="format_distance_only_kilometer">km</string>
+    <string name="format_distance_only_meter">m</string>
+    <string name="format_distance_only_mile">mi</string>
+    <string name="format_distance_only_nautical_mile">nm</string>
+    <string name="format_distance_value_unit">%1$s %2$s</string>
+    <string name="gcm_defaultSenderId">693560063747</string>
+    <string name="general_set">General settings</string>
+    <string name="get_exploitfile">Select script from files</string>
+    <string name="go">Go!</string>
+    <string name="go_to_repository">Go to repository</string>
+    <string name="google_api_key">AIzaSyA3t26x5CCPwpbOuvGtzHDXYN2nArNDBcY</string>
+    <string name="google_app_id">1:693560063747:android:85c9603ac525c184ef9b36</string>
+    <string name="google_crash_reporting_api_key">AIzaSyA3t26x5CCPwpbOuvGtzHDXYN2nArNDBcY</string>
+    <string name="google_storage_bucket">stryker-333.appspot.com</string>
+    <string name="handshakes">Handshakes</string>
+    <string name="hi">Hey!</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hide_macs">Hide Mac</string>
+    <string name="hide_macs_in_all_application_parts">Hide Mac in all parts of the application</string>
+    <string name="hills">Hills</string>
+    <string name="how_it_works_nenter_message_or_part_of_it_which_script_displays_on_success_result_if_no_msg_found_result_marked_as_failed">"How does it work?
+Enter the message (or part of it) that the script will display on success. If the message is not found, the result is marked as failed!"</string>
+    <string name="hs_captured">Handshake captured!</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="if_you_can_support_the_author_with_a_coin_or_tell_your_friends_about_the_application">If you can, support the author with a coin or tell your friends about the app!</string>
+    <string name="incorrect">Wrong pin code or signal too weak!</string>
+    <string name="initializing">Initialization…</string>
+    <string name="inst_error">Installation error</string>
+    <string name="inst_final_desc">The application is already set up and ready to run! Please note: some features will not work due to the nature of the device! For additional functionality, check out the online repository! Clicking button below you agree with Terms of use zalex.dev/stryker/policy</string>
+    <string name="instal1">Preparing…</string>
+    <string name="install">Install</string>
+    <string name="install2">Core loading</string>
+    <string name="install3">Installing the Core</string>
+    <string name="install_core">Installing the Core</string>
+    <string name="install_core_desc">"The app needs to download and install about 30–60MB to work, depending on the device! This process doesn't have to be long!"</string>
+    <string name="install_nfix">"Install
+fix"</string>
+    <string name="install_stm_files">Install the .stm files</string>
+    <string name="install_unpack">Unpacking the Core</string>
+    <string name="installapk">Please install the requested apk!</string>
+    <string name="installchroot">Installing a new chroot</string>
+    <string name="installed">Installed</string>
+    <string name="installedd">Installed</string>
+    <string name="installing">Installation…</string>
+    <string name="installing_module">Installing the module…</string>
+    <string name="installingg">Installation…</string>
+    <string name="integration">3wifi integration</string>
+    <string name="invalid_creds">Failed to login</string>
+    <string name="invalid_module">Sorry, but the {mn} module did not install correctly! Perhaps you did not wait for the download to finish or there was an unstable Internet connection! You should reinstall it...</string>
+    <string name="ip_ranges">IP ranges</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="key">Key:</string>
+    <string name="last_site">Download the latest versions and get official information here!</string>
+    <string name="laucnh">Launch</string>
+    <string name="list_of_available_ports">List of available ports</string>
+    <string name="list_of_ports">List of available ports</string>
+    <string name="local_network">Local network</string>
+    <string name="local_scan">Scanning the local network may take some time, but the result will be 💣!</string>
+    <string name="log_in">Login</string>
+    <string name="login">Login</string>
+    <string name="m1">M1 Receive</string>
+    <string name="m2">Sending M2…</string>
+    <string name="m3_sys_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="m3_sys_motion_easing_emphasized_accelerate">cubic-bezier(0.3, 0.0, 0.8, 0.2)</string>
+    <string name="m3_sys_motion_easing_emphasized_decelerate">cubic-bezier(0.1, 0.7, 0.1, 1.0)</string>
+    <string name="m3_sys_motion_easing_emphasized_path_data">M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1</string>
+    <string name="m3_sys_motion_easing_legacy">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="m3_sys_motion_easing_legacy_accelerate">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_legacy_decelerate">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="m3_sys_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard">cubic-bezier(0.2, 0.0, 0.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard_accelerate">cubic-bezier(0.3, 0.0, 1.0, 1.0)</string>
+    <string name="m3_sys_motion_easing_standard_decelerate">cubic-bezier(0.0, 0.0, 0.0, 1.0)</string>
+    <string name="m4">Getting M4</string>
+    <string name="magisk_notif_bad">Failed</string>
+    <string name="magisk_off_success">Success!</string>
+    <string name="magisk_stryker">Want to turn off notifications from Magisk for the Stryker app? Since this program uses root quite often, this can get in the way. Click to disable</string>
+    <string name="map_mode">Map Source</string>
+    <string name="mapbox">MapBox</string>
+    <string name="mapnik">Mapnik</string>
+    <string name="mapquest_aerial">Mapquest Aerial</string>
+    <string name="mapquest_osm">Mapquest</string>
+    <string name="mark_host_s_as_online">Mark host(s) as online</string>
+    <string name="material_clock_display_divider">:</string>
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+    <string name="material_hour_selection">Select hour</string>
+    <string name="material_hour_suffix">"%1$s o'clock"</string>
+    <string name="material_minute_selection">Select minutes</string>
+    <string name="material_minute_suffix">%1$s minutes</string>
+    <string name="material_motion_easing_accelerated">cubic-bezier(0.4, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_decelerated">cubic-bezier(0.0, 0.0, 0.2, 1.0)</string>
+    <string name="material_motion_easing_emphasized">path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)</string>
+    <string name="material_motion_easing_linear">cubic-bezier(0.0, 0.0, 1.0, 1.0)</string>
+    <string name="material_motion_easing_standard">cubic-bezier(0.4, 0.0, 0.2, 1.0)</string>
+    <string name="material_slider_range_end">Range end,</string>
+    <string name="material_slider_range_start">Range start,</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+    <string name="material_timepicker_hour">Hour</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Select time</string>
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+    <string name="module_invalid">The module {mn} was not installed correctly. It has been removed from the installed list. You should install it again!</string>
+    <string name="modules_repo">Repository</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_checkbox_button_icon_path_checked">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
+    <string name="mtrl_checkbox_button_icon_path_group_name">icon</string>
+    <string name="mtrl_checkbox_button_icon_path_indeterminate">M13.4,15 11,15 11,17 13.4,17 21,17 21,15z</string>
+    <string name="mtrl_checkbox_button_icon_path_name">icon path</string>
+    <string name="mtrl_checkbox_button_path_checked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z</string>
+    <string name="mtrl_checkbox_button_path_group_name">button</string>
+    <string name="mtrl_checkbox_button_path_name">button path</string>
+    <string name="mtrl_checkbox_button_path_unchecked">M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z M23,23H9V9h14V23z</string>
+    <string name="mtrl_checkbox_state_description_checked">Checked</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Not checked</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="mtrl_switch_thumb_group_name">circle_group</string>
+    <string name="mtrl_switch_thumb_path_checked">M4,16 A12,12 0 0,1 16,4 H16 A12,12 0 0,1 16,28 H16 A12,12 0 0,1 4,16</string>
+    <string name="mtrl_switch_thumb_path_morphing">M0,16 A11,11 0 0,1 11,5 H21 A11,11 0 0,1 21,27 H11 A11,11 0 0,1 0,16</string>
+    <string name="mtrl_switch_thumb_path_name">circle</string>
+    <string name="mtrl_switch_thumb_path_pressed">M2,16 A14,14 0 0,1 16,2 H16 A14,14 0 0,1 16,30 H16 A14,14 0 0,1 2,16</string>
+    <string name="mtrl_switch_thumb_path_unchecked">M8,16 A8,8 0 0,1 16,8 H16 A8,8 0 0,1 16,24 H16 A8,8 0 0,1 8,16</string>
+    <string name="mtrl_switch_track_decoration_path">M1,16 A15,15 0 0,1 16,1 H36 A15,15 0 0,1 36,31 H16 A15,15 0 0,1 1,16</string>
+    <string name="mtrl_switch_track_path">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
+    <string name="mtrl_timepicker_cancel">Cancel</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="my_location">My location</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">Stryker</string>
+    <string name="nav_header_title">Stryker</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="new_fix">Fix available!</string>
+    <string name="new_update">New update available!</string>
+    <string name="news">💻 Latest news</string>
+    <string name="niw2">Now: only a day</string>
+    <string name="nmap">Nmap Scanner</string>
+    <string name="no">Not</string>
+    <string name="no_avaible">No available ports founded</string>
+    <string name="no_deauth_int">Deauthe interface not found, try changing the interface in the settings or plug in an adapter!</string>
+    <string name="no_inet">"Sorry, I can't connect to the repository…"</string>
+    <string name="no_inet_chroot">Core does not have access to the internet. This may cause errors in operation!</string>
+    <string name="no_news">No news - this a good news?.. Right?</string>
+    <string name="no_pattern">Attention, the application could not find such a line in the file. This may be due to a feature of the script or obfuscation. Are you sure you entered everything correctly?</string>
+    <string name="no_results">No results found</string>
+    <string name="no_storage">No storage permission</string>
+    <string name="no_storage_desc">"Sorry, this app can't work without storage permission! Click here to go to settings!"</string>
+    <string name="no_thx">No, thx</string>
+    <string name="no_wlan0">Wlan0 cannot be a deauth interface...</string>
+    <string name="nonroot">"Sorry this app can't work without root due to android limitation. How to get root? xda-developers.com/root!"</string>
+    <string name="noroot">Sorry, this app needs root permissions to work!</string>
+    <string name="noroot_perm">No root</string>
+    <string name="not_nturn_off">"Don`t
+Turn off"</string>
+    <string name="not_vuln_local">Sorry, target not vulnerable</string>
+    <string name="not_vuln_pixie">The network is not vulnerable or the signal is too weak</string>
+    <string name="now">Now:</string>
+    <string name="now1">Now: only night</string>
+    <string name="now3">Now: system</string>
+    <string name="offline">Offline mode</string>
+    <string name="online_repo">Online repository</string>
+    <string name="only64">Sorry, this module is only for 64 bit devices!</string>
+    <string name="ooops_sh">Oops…</string>
+    <string name="oops">Oops, looks like something went wrong!</string>
+    <string name="oops_this_page_is_under_development_see_you_after_update_s">Oops. This page is under development! See you after update(s)!</string>
+    <string name="our_telegram_chat_news_problem_solving_and_blog_are_here">Our telegram chat, news, problem solving and blog are here!</string>
+    <string name="pass">Password:</string>
+    <string name="pass_founded">Password found:</string>
+    <string name="pass_not_found">Password not found</string>
+    <string name="password">Password</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path">Path:</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pcik_mode">Pick mode</string>
+    <string name="perm_cut">Permanent cut</string>
+    <string name="perms">Permissions</string>
+    <string name="perms_desc">"The application needs permissions:
+● Access to files
+● Root access
+The application cannot work without them!"</string>
+    <string name="pick">Choose an interface</string>
+    <string name="piin">"
+Pin: "</string>
+    <string name="pin">Pin:</string>
+    <string name="pinss">... 1 pin/s</string>
+    <string name="pixie_dust_attack">Pixie Dust attack</string>
+    <string name="pke">PKE received</string>
+    <string name="pkr">PKR received</string>
+    <string name="plata">Board:</string>
+    <string name="please_connect">Please connect to the network first!</string>
+    <string name="please_file">Please choose a file!</string>
+    <string name="pls_install">Please, install {mn} in repository to use this feature!</string>
+    <string name="ports">Ports</string>
+    <string name="preparing">Preparing</string>
+    <string name="prog">"Progress: "</string>
+    <string name="project_id">stryker-333</string>
+    <string name="psk">"
+PSK - "</string>
+    <string name="public_transport">Public transport</string>
+    <string name="q">Enter a request</string>
+    <string name="ranges_and_ips">Ranges and IP</string>
+    <string name="reboot">Reload</string>
+    <string name="reboot_update">A reboot is required for a safe update!</string>
+    <string name="recom">The developer has added a fix version! Conceived, it removes critical bugs and is recommended for installation!</string>
+    <string name="relaunch_app">Restart</string>
+    <string name="reload">Restart application</string>
+    <string name="return_back">Return back</string>
+    <string name="roads_nl">Netherlands roads overlay</string>
+    <string name="router_scan">Router Scan</string>
+    <string name="router_scan_settings">Router Scan Settings</string>
+    <string name="rs">Router Scan</string>
+    <string name="run">launch</string>
+    <string name="run_custom">Run custom exploit</string>
+    <string name="rvregre">\? This process is automatic!</string>
+    <string name="safe_modification_data_lose_prevent">Safe modification. Data Loss Prevention</string>
+    <string name="samples">Samples</string>
+    <string name="save">Save</string>
+    <string name="saved_to">The results are saved in routerscan.csv!</string>
+    <string name="saved_to_exp">Saved to exploits!</string>
+    <string name="saved_to_hs">Saved to</string>
+    <string name="scan_finised">Scan completed!</string>
+    <string name="scan_finished_desc">Scan completed! You can save the result with the icon at the top!</string>
+    <string name="scanners">Here you can create or edit ready-made vulnerability scanners. You can combine protocol exploits to launch with one click.</string>
+    <string name="scanners_title">Scanners</string>
+    <string name="scanning">Scanning in progress…</string>
+    <string name="scanning_wifi">Scanning Wi-Fi networks</string>
+    <string name="sdcard_error">"Sorry, but this app can't be installed on a sdcard! Please install it to internal storage!"</string>
+    <string name="search_menu_title">Search</string>
+    <string name="sel_exploit">Select exploit</string>
+    <string name="sel_module">Select module</string>
+    <string name="select">Path to exploit: click to select</string>
+    <string name="select_file">Please select a file from the list!</string>
+    <string name="select_word">Choose a dictionary</string>
+    <string name="select_word2">Choose a dictionary</string>
+    <string name="send_pin">Sending a Pin</string>
+    <string name="set_deauth_ninterface">"Set deauth
+interface"</string>
+    <string name="set_max_threads">Set the maximum number of threads</string>
+    <string name="set_mode_hide_me">hiding my current location</string>
+    <string name="set_mode_offline">Set to offline mode</string>
+    <string name="set_mode_online">Set to online mode</string>
+    <string name="set_mode_show_me">showing and tracking my current location</string>
+    <string name="set_ranges">Set Ranges</string>
+    <string name="set_scan_ninterface">"Set scan
+interface"</string>
+    <string name="set_timeout_ms">Set timeout (ms)</string>
+    <string name="snapshot">Snapshot</string>
+    <string name="sorry">"We'll be waiting for you! :("</string>
+    <string name="sorry_not_vuln">Sorry, target not vulnerable</string>
+    <string name="speed">Speed:</string>
+    <string name="speedd">"
+Speed:"</string>
+    <string name="spin">sec/pin</string>
+    <string name="ssid">"
+SSID - "</string>
+    <string name="start">Start</string>
+    <string name="start_airdump">Attacking…</string>
+    <string name="start_brute">Starting a bruteforce…</string>
+    <string name="start_core">Starting core...</string>
+    <string name="start_dump">Running airodump-ng</string>
+    <string name="start_pixie">Launching Pixie Dust…</string>
+    <string name="starting_installing_module_n">"Starting module installation…
+"</string>
+    <string name="states">States</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop">Stop</string>
+    <string name="store_n_aps">"Save
+hotspots"</string>
+    <string name="store_successful_pentested_aps">Keep Successful Pentested APs</string>
+    <string name="suc_pass">Successfully! | Password:</string>
+    <string name="succes">Success!</string>
+    <string name="success">Successful installation</string>
+    <string name="successful_pattern">successful pattern</string>
+    <string name="sup_project">Support Project</string>
+    <string name="sure">Are you sure you want to uninstall the app?</string>
+    <string name="target_ip_mask">Target (ip,mask)</string>
+    <string name="target_locked">Target locked</string>
+    <string name="term_title">Integration with termux</string>
+    <string name="thanks">Thanks for installing the app! It only takes a few steps to complete the installation!</string>
+    <string name="thx_beta">Thank you for participating in the beta test! I hope you enjoy the release even more!</string>
+    <string name="thx_no">Perhaps, I will refuse</string>
+    <string name="title">Title</string>
+    <string name="topo">Topographic</string>
+    <string name="try_again">Try again</string>
+    <string name="try_capture_handshake">Handshake capture</string>
+    <string name="try_connect">Trying to connect...</string>
+    <string name="try_wlan0">"Trying to put wlan0 into monitor mode…
+"</string>
+    <string name="tryagain">Try again</string>
+    <string name="trying">Trying:</string>
+    <string name="trying_connect">Trying to connect....</string>
+    <string name="trying_put_inter">"Trying to put interfaces into monitor mode
+"</string>
+    <string name="tutorials">textbooks</string>
+    <string name="unknown">Unknown</string>
+    <string name="unmount">Unmounting the Core…</string>
+    <string name="unmount_nchroot">"Unmount
+Chroot"</string>
+    <string name="update">Installing the update</string>
+    <string name="upload_success">The file has been successfully uploaded, please check your mail!</string>
+    <string name="usb">USB device connected</string>
+    <string name="userhello">"👋 Hello, "</string>
+    <string name="version">Version: 2.0</string>
+    <string name="version_2_0_release">Version 2.0 release</string>
+    <string name="vuln_for">Target vulnerable for:</string>
+    <string name="wait">Please wait</string>
+    <string name="wait_hs">"sec] Waiting for a handshake…
+"</string>
+    <string name="wait_hs2">Waiting handshake...</string>
+    <string name="wait_res">Waiting results...</string>
+    <string name="waiting_res">Waiting results...</string>
+    <string name="want_update">Would you like to upgrade from</string>
+    <string name="warn">Warning</string>
+    <string name="webauth">WebAuth -</string>
+    <string name="website">"Web
+scanner"</string>
+    <string name="went_wrog_play">"Unable to deauth, passive mode enabled…
+"</string>
+    <string name="wifi">WiFi Networks</string>
+    <string name="wifi_networks">WiFi Networks</string>
+    <string name="wps">"
+WPS - "</string>
+    <string name="wps_pin">Getting a pincode</string>
+    <string name="yeah_ok">Yes, Do it</string>
+    <string name="yes">Yes</string>
+    <string name="куыещкув">Restored!</string>
+</resources>

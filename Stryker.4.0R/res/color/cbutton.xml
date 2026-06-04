@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@color/blue" />
+    <item android:state_checked="false" android:color="@color/blue2" />
+    <item android:state_enabled="false" android:color="@color/grey" android:alpha="@dimen/material_emphasis_disabled" />
+    <item android:color="@color/grey" android:alpha="@dimen/material_emphasis_medium" />
+</selector>

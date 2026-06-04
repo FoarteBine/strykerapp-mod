@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24.0dp" android:paddingEnd="24.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView android:id="@id/deSelector" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" app:simpleItems="@array/vnc_desktop_environments" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

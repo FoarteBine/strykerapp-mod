@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_margin="10.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/qr" />
+        <TextView android:textSize="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Login into account" />
+        <TextView android:textSize="14.0dp" android:textColor="@color/grey" android:gravity="center" android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Firstly, you need to sign up at strykerdefence.com" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" />
+        <me.dm7.barcodescanner.zxing.ZXingScannerView android:id="@id/scanner" android:layout_width="match_parent" android:layout_height="280.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:borderColor="@color/blue2" app:laserEnabled="false" app:maskColor="@color/nightwhite" app:shouldScaleToFill="false" app:squaredFinder="true" />
+        <TextView android:textSize="22.0dp" android:textStyle="bold" android:textColor="@color/blue2" android:id="@id/manually" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="Enter manually" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

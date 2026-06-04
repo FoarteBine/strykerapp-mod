@@ -1,0 +1,6 @@
+#!/system/bin/sh
+
+######### ALPINE EXEC #########
+FROM_ZALEXDEV_TO_WORLD=$(readlink -f $0)
+. ${FROM_ZALEXDEV_TO_WORLD%/*}/bootroot_env
+$BUSYBOX chroot $MNT /bin/ash -l&&exit

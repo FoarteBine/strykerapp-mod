@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+        <ImageView android:id="@id/image_dialog_1" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.0dp" />
+        <ImageView android:id="@id/image_dialog_2" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.0dp" />
+        <ImageView android:id="@id/image_dialog_3" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.0dp" />
+        <ImageView android:id="@id/image_dialog_4" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="5.0dp" />
+    </LinearLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/shimmer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_marginTop="-20.0dp">
+                <ImageView android:id="@id/device_image" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/devices" />
+                <TextView android:textSize="30.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/port_count" android:background="@drawable/circle" android:layout_width="50.0dp" android:layout_height="50.0dp" android:text="5" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/local_circle" />
+            </RelativeLayout>
+            <com.google.android.material.textview.MaterialTextView android:textSize="30.0dp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/device_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="192.168.1.1" />
+            <com.google.android.material.textview.MaterialTextView android:textSize="15.0dp" android:layout_gravity="center" android:id="@id/device_mac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:text="MAC address" android:textIsSelectable="true" />
+            <com.google.android.material.textview.MaterialTextView android:textSize="12.0dp" android:layout_gravity="center" android:id="@id/device_os" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:text="Device OS: Unknown" android:textIsSelectable="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/nmap_report" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/summarize" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Generate detail report" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/check_vulns" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/screen_search_desktop" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Check common vulnerabilities" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/netcut" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/cut" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Disable internet access" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/launch_hydra" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/key" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Start Bruteforce" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/camera_check" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/nest_cam_indoor" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Check camera" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/check_camera" android:background="?selectableItemBackground" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/check_camera" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/check_admin_panel" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/webscan" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Check admin panel" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/launch_msf" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/shield" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Launch metasploit" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/generate_payload" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/attachment" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Generate payload" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/wake_on_lan" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/send" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send Wake on Lan" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/run_exploit" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/rocket_launch" />
+            <TextView android:textSize="20.0dp" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/run_custom" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

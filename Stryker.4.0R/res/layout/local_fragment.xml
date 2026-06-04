@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/title_loader" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/local_scan" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/local_img" android:padding="10.0dp" android:layout_width="250.0dp" android:layout_height="250.0dp" android:layout_marginBottom="20.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/newlocal" app:lottie_speed="1.5" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/local_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_scan" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/nmap_progressbar" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="5.0dp" android:max="110" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:indicatorColor="@color/blue" app:trackCornerRadius="5.0dp" />
+    </LinearLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/up_progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:indicatorColor="@color/blue" app:trackCornerRadius="5.0dp" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/local_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/local_list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.card.MaterialCardView android:id="@id/firewall_warn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" android:backgroundTint="#f9a825" app:cardCornerRadius="15.0dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_margin="10.0dp" android:src="@drawable/firewall" android:tint="@color/white" />
+            <TextView android:textColor="@color/white" android:gravity="left|center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Attention! Stryker detected possible firewall usage! Without open ports - you can not detect vulnerabilities!" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

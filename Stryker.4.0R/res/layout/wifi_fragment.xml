@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/wifilist" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scanlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/scan_img" android:layout_width="350.0dp" android:layout_height="350.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" />
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/scan_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanning_wifi" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/blue2" android:gravity="center" android:id="@id/try_again" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/try_again" android:drawablePadding="5.0dp" android:drawableTint="@color/blue2" app:drawableLeftCompat="@drawable/update" />
+    </LinearLayout>
+    <com.nambimobile.widgets.efab.ExpandableFabLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:overlay_openingAnimationDurationMs="300">
+        <com.nambimobile.widgets.efab.Overlay android:layout_width="match_parent" android:layout_height="match_parent" app:overlay_alpha="0.0" app:overlay_closingAnimationDurationMs="100" app:overlay_openingAnimationDurationMs="100" app:overlay_orientation="portrait" />
+        <com.nambimobile.widgets.efab.ExpandableFab android:layout_gravity="end|bottom" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:efab_icon="@drawable/auto_awesome" app:efab_iconAnimationRotationDeg="0.0" app:efab_orientation="portrait" app:overlay_openingAnimationDurationMs="300" />
+        <com.nambimobile.widgets.efab.FabOption android:id="@id/fab_pixie" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_icon="@drawable/autopixie" app:fab_orientation="portrait" app:label_text="Auto Pixie Dust" />
+        <com.nambimobile.widgets.efab.FabOption android:id="@id/fab_hs" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_icon="@drawable/file" app:fab_orientation="portrait" app:label_text="Handshake capture" />
+        <com.nambimobile.widgets.efab.FabOption android:id="@id/fab_deauth" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_icon="@drawable/deauth" app:fab_orientation="portrait" app:label_text="Start deauth" />
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
+</RelativeLayout>

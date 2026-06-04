@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/msf_linear" android:layout_width="200.0dp" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="150.0dp" android:layout_height="150.0dp" android:layout_marginTop="20.0dp" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/hotspot" app:lottie_speed="0.2" />
+        <TextView android:textSize="25.0dp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Captive portal" />
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/install_captive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Install" app:cornerRadius="15.0dp" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:layout_gravity="center" android:id="@id/prog" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:indeterminate="true" app:trackCornerRadius="15.0dp" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dp" android:gravity="center" android:id="@id/captive_init" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="Initializing..." android:layout_below="@id/msf_linear" />
+</RelativeLayout>

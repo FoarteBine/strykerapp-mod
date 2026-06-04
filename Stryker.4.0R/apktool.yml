@@ -1,0 +1,20 @@
+version: 3.0.2
+apkFileName: Stryker.4.0R.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 400
+  versionName: 4.0R
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- png
+- so
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

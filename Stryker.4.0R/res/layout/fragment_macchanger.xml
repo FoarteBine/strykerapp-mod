@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:paddingBottom="12.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/animation_view" android:layout_width="180.0dp" android:layout_height="180.0dp" android:layout_marginTop="20.0dp" app:lottie_autoPlay="true" />
+            <TextView android:textSize="28.0dp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="MAC Changer" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/iface_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:startIconDrawable="@drawable/ic_renew" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <AutoCompleteTextView android:id="@id/iface" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Select interface" android:singleLine="true" android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/macaddress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:startIconDrawable="@drawable/ic_generate" style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/macaddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="MAC address (01:23:45:AB:CD:EF)" android:singleLine="true" android:maxLength="17" android:inputType="textNoSuggestions" android:importantForAutofill="no" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/permanent_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:endIconDrawable="@drawable/ic_done" app:endIconMode="custom" app:startIconDrawable="@drawable/ic_renew" style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/permanent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Permanent MAC address:" android:singleLine="true" android:editable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton android:id="@id/change_mac" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginTop="10.0dp" android:text="Change MAC" app:icon="@drawable/password" app:iconGravity="textEnd" app:iconSize="25.0dp" />
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_renew" app:tint="@color/grey" />
+                <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- update interfaces list" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_generate" app:tint="@color/grey" />
+                <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- generate a random MAC address" android:layout_marginStart="10.0dp" />
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                    <ImageView android:layout_gravity="center" android:id="@id/warn_img" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="5.0dp" android:src="@drawable/magic_button" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0dp" android:layout_gravity="center" android:id="@id/warn_text" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="TIP: MAC addresses are unique identifiers on networks, they only need to be unique, they can be changed on most network hardware." android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

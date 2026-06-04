@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/wifilist" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scanlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15.0dp" android:textStyle="bold" android:gravity="center" android:id="@id/scan_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No saved networks" />
+        <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/blue2" android:gravity="center" android:id="@id/try_again" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/try_again" android:drawablePadding="5.0dp" android:drawableTint="@color/blue2" app:drawableLeftCompat="@drawable/update" />
+    </LinearLayout>
+</RelativeLayout>

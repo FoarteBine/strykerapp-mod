@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="400.0dp">
+        <TextView android:textSize="18.0dp" android:textStyle="bold" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/set_ranges" android:lineSpacingExtra="5.0dp" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center" android:id="@id/textField" android:layout_width="280.0dp" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:hint="@string/ranges_and_ips">
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="200.0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/blue2" android:id="@id/rs_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="20.0dp" android:text="@string/cancel" android:layout_weight="1.0" android:textAlignment="textEnd" />
+            <TextView android:textSize="16.0dp" android:textStyle="bold" android:textColor="@color/blue2" android:id="@id/rs_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:layout_marginBottom="20.0dp" android:text="OK" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

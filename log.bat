@@ -1,0 +1,1 @@
+adb logcat | findstr /I "com.zalexdev.stryker"

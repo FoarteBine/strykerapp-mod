@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="22.0dp" android:id="@id/user_hello" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="@string/userhello" android:layout_marginStart="22.0dp" />
+            <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shim_lic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dp" android:textColor="#8f8f8f" android:id="@id/user_lic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="10.0dp" android:text="Getting info..." android:layout_marginStart="22.0dp" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <com.google.android.material.card.MaterialCardView android:id="@id/update_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_margin="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/update_img" android:padding="10.0dp" android:layout_width="120.0dp" android:layout_height="match_parent" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/hello" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20.0dp">
+                        <TextView android:textSize="16.0dp" android:id="@id/update_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="New update available!" />
+                        <TextView android:textSize="12.0dp" android:textColor="@color/grey" android:id="@id/update_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="Click to start download and setup!" />
+                        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/update_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" app:indicatorColor="@color/blue2" app:trackCornerRadius="15.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/magisk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="15.0dp">
+                        <ImageView android:layout_gravity="left|center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/magisk" android:tint="@color/device_img" />
+                        <TextView android:textSize="20.0dp" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Magisk popup" android:layout_marginStart="15.0dp" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0dp" android:textColor="@color/grey" android:layout_gravity="center" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The application often uses root. Magisk notifications can greatly interfere and spoil the user experience. Therefore, we advise you to disable them using the button below." />
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="10.0dp">
+                        <com.google.android.material.button.MaterialButton android:textSize="14.0dp" android:id="@id/magisk_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dismiss" app:cornerRadius="18.0dp" app:icon="@drawable/close" />
+                        <com.google.android.material.button.MaterialButton android:textSize="14.0dp" android:id="@id/magisk_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Turn off" android:layout_marginStart="10.0dp" android:layout_marginEnd="10.0dp" app:cornerRadius="18.0dp" app:icon="@drawable/arrow_right" app:iconGravity="end" app:iconSize="24.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_wifi" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/wifi" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/wifi_networks" android:breakStrategy="balanced" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_localnetwork" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/lan" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/local_network" android:breakStrategy="balanced" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_hs" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/file" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="Handshakes Storage" android:breakStrategy="balanced" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_exloits" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/motion_blur" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="Exploit\nHub" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_sploit" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/database" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="Exploit\nDatabase" android:fontFamily="@font/lato" android:breakStrategy="balanced" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_website" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/webscan" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="@string/website" android:breakStrategy="balanced" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_searchsploit" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/router" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="RScan" android:breakStrategy="balanced" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_geo" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/map" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="GeoMac" android:breakStrategy="balanced" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/menu_msf" android:focusable="true" android:clickable="true" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_margin="5.0dp" android:elevation="5.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" android:src="@drawable/shield" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView android:textSize="12.0dp" android:gravity="center" android:layout_width="70.0dp" android:layout_height="wrap_content" android:text="Metasploit" android:breakStrategy="balanced" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0dp" android:textStyle="italic" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="-----" android:textAllCaps="false" android:layout_marginStart="70.0dp" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/license_notif" android:layout_width="match_parent" android:layout_height="wrap_content" app:el_expanded="true">
+                <com.google.android.material.card.MaterialCardView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:cardBackgroundColor="#ec3c78" app:cardCornerRadius="15.0dp">
+                    <ImageView android:layout_gravity="right" android:id="@id/license_close" android:layout_width="15.0dp" android:layout_height="15.0dp" android:layout_margin="10.0dp" android:src="@drawable/close" android:tint="@color/white" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp">
+                        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_margin="5.0dp" android:src="@drawable/error" android:tint="@color/white" />
+                        <TextView android:textColor="@color/white" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <TextView android:textSize="22.0dp" android:id="@id/person" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="👤 Personal zone" android:layout_marginStart="22.0dp" />
+            <com.google.android.material.card.MaterialCardView android:id="@id/terminal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/terminal" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Open Terminal" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/news" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/notification" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:id="@id/news_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="News" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/latest_wifi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/latest_wifi" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="WiFi history" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:textSize="22.0dp" android:id="@id/soon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="🛠️ In development" android:layout_marginStart="22.0dp" />
+            <com.google.android.material.card.MaterialCardView android:id="@id/stats" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/analytics" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Your statistics" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/latest_local" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/latest_local" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Latest local scans" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/latest_report" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/file" android:tint="@color/grey" android:layout_marginStart="15.0dp" />
+                    <TextView android:textSize="18.0dp" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20.0dp" android:text="Latest reports" android:layout_weight="1.0" android:layout_marginStart="22.0dp" />
+                    <ImageView android:layout_gravity="center" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:rotation="270.0" android:layout_marginEnd="5.0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

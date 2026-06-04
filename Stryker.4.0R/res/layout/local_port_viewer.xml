@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp" android:elevation="8.0dp" app:cardCornerRadius="15.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10.0dp">
+        <TextView android:textSize="26.0dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="Available Ports" />
+        <com.google.android.material.button.MaterialButton android:id="@id/show_nmap_toggle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:text="Show raw nmap" app:icon="@drawable/search" app:iconGravity="textEnd" />
+        <TextView android:textColor="@color/grey" android:id="@id/raw_nmap" android:visibility="gone" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_margin="10.0dp" android:text="" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/port_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/noports" android:visibility="gone" android:layout_width="220.0dp" android:layout_height="220.0dp" app:lottie_autoPlay="true" />
+        <TextView android:textSize="18.0dp" android:gravity="center" android:id="@id/noports_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="No open ports found" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

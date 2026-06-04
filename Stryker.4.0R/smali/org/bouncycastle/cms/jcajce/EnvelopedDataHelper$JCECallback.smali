@@ -1,0 +1,14 @@
+.class interface abstract Lorg/bouncycastle/cms/jcajce/EnvelopedDataHelper$JCECallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/bouncycastle/cms/jcajce/EnvelopedDataHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "JCECallback"
+.end annotation

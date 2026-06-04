@@ -1,0 +1,27 @@
+.class public Lorg/bouncycastle/asn1/x509/qualified/QCStatement;
+.super Lorg/bouncycastle/asn1/ASN1Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/bouncycastle/asn1/x509/qualified/ETSIQCObjectIdentifiers;
+.implements Lorg/bouncycastle/asn1/x509/qualified/RFC3739QCObjectIdentifiers;
+
+
+# virtual methods
+.method public final c()Lorg/bouncycastle/asn1/ASN1Primitive;
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    invoke-static {v0, v1}, Lv6/a;->e(ILorg/bouncycastle/asn1/ASN1Encodable;)V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v1
+.end method

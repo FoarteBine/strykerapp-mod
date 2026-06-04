@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/search_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" app:boxCornerRadiusBottomEnd="15.0dp" app:boxCornerRadiusBottomStart="15.0dp" app:boxCornerRadiusTopEnd="15.0dp" app:boxCornerRadiusTopStart="15.0dp" app:endIconDrawable="@drawable/search" app:endIconMode="custom" app:endIconTint="@color/blue2" style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter IP address or mask" android:singleLine="true" android:inputType="textNoSuggestions" android:importantForAutofill="no" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progressbar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="5.0dp" android:indeterminate="true" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:indicatorColor="@color/blue" app:trackCornerRadius="5.0dp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/extra_expand" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/detect_os" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/detect_os" />
+                    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/detect_services" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/detect_services" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/fast_scan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fast_scan_less_ports" />
+                    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/mark_online" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mark_host_s_as_online" />
+                </LinearLayout>
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <LinearLayout android:id="@id/extra_toggle" android:layout_width="match_parent" android:layout_height="25.0dp">
+            <ImageView android:layout_gravity="center" android:id="@id/nmap_toggle_img" android:layout_width="match_parent" android:layout_height="30.0dp" android:src="@drawable/arrow_down" android:tint="@color/blue2" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:textColor="@color/white" android:gravity="bottom" android:id="@id/nmap_output" android:background="#222222" android:padding="5.0dp" android:scrollbars="horizontal|vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:textIsSelectable="true" />
+    </LinearLayout>
+</LinearLayout>

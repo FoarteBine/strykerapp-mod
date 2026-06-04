@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="160.0dp" android:layout_height="160.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="20.0dp" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/hotspot" app:lottie_speed="0.3" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp" app:cardCornerRadius="18.0dp" app:strokeColor="@color/grey" app:strokeWidth="1.0dp">
+            <LinearLayout android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:autoLink="web" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More detailed info you can found on our wiki: https://wiki.strykerdefence.com/books/settings-docs/page/interface-settings" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/scan_interface_view" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/wifi" android:tint="#1565c0" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="22.0dp" android:layout_gravity="left|center" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scan Interface" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/grey" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This interface will be used for wifi discovery and all attacks except handshake and deauth" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/scan_interface" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="Wlan0" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/hs_interface_view" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/handshake_interface" android:tint="#283593" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="22.0dp" android:layout_gravity="left|center" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Handshake Interface" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/grey" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This interface will be used for monitor mode and handshake capture attack" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/hs_interface" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="Wlan1" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/deauth_interface_view" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/deauth" android:tint="#ad1457" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="22.0dp" android:layout_gravity="left|center" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deauth Interface" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/grey" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This interface will be used for deauthing users from AP" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/deauth_interface" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="Wlan1" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/wps_interface_view" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="38.0dp" android:layout_height="38.0dp" android:src="@drawable/autopixie" android:tint="#1e88e5" android:layout_marginStart="20.0dp" />
+                    <TextView android:textSize="22.0dp" android:layout_gravity="left|center" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WPS Interface" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+                </LinearLayout>
+                <TextView android:textSize="14.0dp" android:textColor="@color/grey" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This interface will be used for all WPS attacks" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/wps_interface" android:layout_width="80.0dp" android:layout_height="match_parent" android:text="Wlan1" android:layout_marginEnd="10.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

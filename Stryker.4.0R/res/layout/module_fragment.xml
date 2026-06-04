@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" app:indicatorColor="@color/blue2" />
+    <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/blue2" android:id="@id/installed_text" android:padding="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:text="🧿 Installed" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/installed_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_marginTop="15.0dp" />
+    <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="#0d47a1" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:text="🌐 Online repository" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/repo_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:layout_marginTop="10.0dp" />
+</LinearLayout>
