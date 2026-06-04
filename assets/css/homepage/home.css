@@ -1,0 +1,183 @@
+#top-left-text {
+    font-size: 6vh;
+    vertical-align: middle;
+}
+.bg {
+    background-size: 100vw;
+}
+
+#top-right {
+    display: block;
+    position: relative;
+    z-index: 0;
+    height: calc(80vh - 8vh);
+}
+
+#top-right img {
+    height: calc(80vh - 8vh);
+}
+
+#phone-back {
+    position: absolute;
+    left: -50%;
+    z-index: -1;
+    top: -5%;
+}
+
+#phone-front {
+    position: relative;
+}
+
+#phone-content {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 93%;
+    height: 95.5%;
+    margin-left: .5vw;
+    margin-top: 1vh;
+    background-color: white;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg);
+}
+
+#phone-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.phone {
+    height: 53vh;
+}
+
+#features-content-box {
+    gap: 2vh;
+}
+
+#feature-phone {
+    height: 53vh;
+}
+
+#feature-screen {
+    top: 0.9vh;
+    left: 0.4vw;
+    width: 93%;
+    height: 96%;
+}
+
+.feature {
+    width: 20vw;
+}
+
+#features-arrow-left, #features-arrow-right {
+    right: 68%;
+}
+
+#features-arrow-right {
+    left: 68%;
+}
+
+#prices-container {
+    gap: 3vw;
+    width: 80%;
+}
+
+.price {
+    width: 25%;
+}
+
+#prices-type, #auth-type {
+    width: 20vw;
+    border-radius: 2vh;
+}
+
+.resource {
+    width: 20vh;
+    height: 20vh;
+}
+
+.resource img {
+    height: 8vh;
+}
+
+.resource h3 {
+    font-size: 3vh;
+    vertical-align: middle;
+}
+
+#wiki, #faq {
+    width: 50%;
+}
+
+#resources-faq-cont {
+    padding: 10vh 0 0 0;
+    overflow: hidden;
+}
+
+#auth-window {
+    width: 40vw;
+}
+
+.auth-type {
+    gap: 0.3vw;
+}
+
+#auth-body {
+    display: flex;
+    flex-direction: row;
+    transition: all .6s;
+}
+
+#auth-body form {
+    width: 40vw;
+    padding: 0 8vh;
+}
+
+.auth-input {
+    padding: 1vh 0.5vw;
+    gap: 0.5vw;
+}
+
+.auth-input input {
+    color: white;
+    font-family: lato, sans-serif;
+    background: transparent;
+    caret-color: var(--blue);
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    vertical-align: middle;
+}
+
+.close-cross {
+    top: 22vh;
+    right: 31vw;
+}
+
+.close-cross img {
+    height: 3vh;
+    width: 3vh;
+}
+
+.ehs-container {
+    width: 70%;
+    min-height: 83vh;
+    padding: 2vw 2vh;
+}
+
+.ehs-list a {
+    text-align: left;
+}
+
+.ehs-list, .ehs-container {
+    align-items: flex-start;
+}
+
+.ehs-container, .ehs-list-container, .ehs-list  {
+    gap: 3vh;
+}

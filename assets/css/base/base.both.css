@@ -1,0 +1,222 @@
+:root {
+    --bg: #1e1e1e;
+    --nav: #2d2d2d;
+    --bright: #4a4a4a;
+    --blue: #1565c0;
+    --blueh: #1055a3;
+}
+
+html, body {
+    max-width: 100vw;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+#logo {
+    height: 6vh;
+}
+
+#logo p {
+    font-weight: 800;
+    font-size: 3vh;
+    vertical-align: middle;
+}
+
+#logo *, #profile *, .button-gray * {
+    pointer-events: none;
+}
+
+#logo *, #profile *, .button-blue p, .button-gray p {
+    margin: 0;
+    padding: 0;
+}
+
+#progress-bar {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    min-width: 0;
+    min-height: 0.2vh;
+    background-color: var(--blue);
+    top: 8vh;
+    box-shadow: 0px 0.2vh 0.4vh var(--blue);
+    transition: all .3s;
+}
+
+.flex-row-center, .flex-column-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-column-center {
+    flex-direction: column;
+}
+
+nav {
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--nav);
+    width: 100%;
+    color: white;
+    font-family: lato, sans-serif;
+    z-index: 20;
+    justify-content: space-between;
+}
+
+.button-inactive {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.button-gray {
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-family: lato, sans-serif;
+    color: white;
+    transition: all .3s;
+    font-size: 2vh;
+}
+
+.button-gray img {
+    height: 2vh;
+}
+
+.button-gray:hover {
+    filter: invert(12%) sepia(0%) saturate(1%) hue-rotate(147deg) brightness(93%) contrast(83%);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-blue {
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid var(--blue);
+    border-radius: 3vh;
+    cursor: pointer;
+    font-family: lato, sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: var(--blue);
+    transition: all .3s;
+    font-size: 2vh;
+}
+
+.button-red {
+    width: fit-content;
+    justify-content: center;
+    border: 1px solid #a43c3c;
+    border-radius: 3vh;
+    cursor: pointer;
+    font-family: lato, sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: #c54d4d;
+    transition: all .3s;
+    font-size: 2vh;
+}
+
+.button-blue *, .button-gray *, .button-red * {
+    vertical-align: middle;
+}
+
+.button-blue img,
+.button-red img {
+    height: 2vh;
+}
+
+.button-blue:hover {
+    border: 1px solid var(--blueh);
+    background-color: var(--blueh);
+}
+
+.button-red:hover {
+    border: 1px solid #8c3333;
+    background-color: #b04141;
+}
+
+.just-modal {
+    position: fixed;
+    background: var(--nav);
+    z-index: 20;
+    border: 1px solid white;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: lato, sans-serif;
+    padding: 4vh;
+    color: white;
+}
+
+.just-modal * {
+    font-size: 2vh;
+    vertical-align: middle;
+}
+
+.mini {
+    position: absolute;
+    border: 1px solid white;
+    background: var(--bg);
+    opacity: 1;
+    padding: 0.8vh 2vw;
+    color: white;
+    font-family: lato, sans-serif;
+    font-size: 2vh;
+    vertical-align: middle;
+    border-radius: 2vh;
+    transition: all .6s;
+}
+
+.copyable {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyable:hover {
+    text-decoration: dotted underline;
+}
+
+footer {
+    font-size: 2vh;
+    vertical-align: middle;
+    color: white;
+    font-family: lato, sans-serif;
+    justify-content: center;
+    background: var(--bg);
+    padding: 3vh 0;
+}
+
+.popup {
+    position: fixed;
+    bottom: 5%;
+    left: 100%;
+    background: var(--bright);
+    border-radius: 1vh;
+    box-shadow: 0 0 4px 0 white;
+    color: white;
+    font-family: lato, sans-serif;
+    z-index: 20;
+    font-size: 2vh;
+    transition: all .6s;
+    max-width: 90vw;
+    max-height: 80vh;
+}

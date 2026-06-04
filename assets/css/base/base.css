@@ -1,0 +1,63 @@
+nav {
+    padding: 0 2vw;
+}
+
+#logo {
+    gap: 0.5vw;
+}
+
+#logo img {
+    height: 4.5vh;
+}
+
+#links a {
+    font-size: 2vh;
+    vertical-align: middle;
+    height: 8vh;
+    justify-content: center;
+    padding: 0 1vw;
+    transition: background .3s;
+}
+
+#links a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#links div {
+    padding-top: .2vh;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+#profile {
+    transition: all .3s;
+}
+
+#profile {
+    margin-left: 1vh;
+}
+
+#profile img {
+    height: 2vh;
+}
+
+.button-gray, .button-blue, .button-red {
+    padding: 0.8vh 1vw;
+    gap: 0.5vw;
+}
+
+.portable {
+    display: none;
+}
+
+.just-modal {
+    width: 33vw;
+    height: 33vh;
+    top: 33vh;
+    left: 33vw;
+}
+
+.popup {
+    width: 30vw;
+    padding: 1vw;
+}

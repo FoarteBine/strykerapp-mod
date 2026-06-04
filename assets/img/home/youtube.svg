@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="500"
+   height="350"
+   viewBox="0 0 320 224"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="youtube.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.5975"
+     inkscape:cx="317.99163"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <title
+     id="title2">youtube-filled</title>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="matrix(0.75000201,0,0,0.75000201,-32.000512,-80.000909)">
+    <g
+       id="icon"
+       fill="#000000"
+       transform="translate(42.666738,106.66724)">
+      <path
+         d="M 214.30471,5.4306883e-4 C 226.42473,0.02168714 348.41486,0.44456862 380.0106,8.9021981 c 18.368,4.8753249 32.81066,19.2893309 37.73866,37.7307779 8.56064,31.948219 8.90307,97.106304 8.91676,102.267834 v 0.65292 c -0.0137,5.17716 -0.35612,70.5306 -8.91676,102.47882 -4.928,18.44145 -19.37066,32.85545 -37.73866,37.73078 -32.5935,8.72471 -161.38066,8.89921 -166.5191,8.9027 h -0.3165 c -5.13927,-0.003 -133.947338,-0.17799 -166.561738,-8.9027 C 28.266595,284.888 13.802596,270.474 8.8959288,252.03255 0.35576883,220.08433 0.01416243,154.73089 4.98176e-4,149.55373 v -0.65292 C 0.01416243,143.73928 0.35576883,78.581195 8.8959288,46.632976 13.802596,28.191529 28.266595,13.777523 46.613262,8.9021981 78.229262,0.44456862 200.23966,0.02168714 212.36166,5.4306883e-4 Z M 169.68526,86.271491 V 212.39404 l 111.53067,-63.16726 z"
+         id="Shape" />
+    </g>
+  </g>
+  <metadata
+     id="metadata828">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>youtube-filled</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

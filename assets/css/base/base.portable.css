@@ -1,0 +1,132 @@
+nav {
+    padding: 0 4vw;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+#logo {
+    gap: 1vw;
+}
+
+#logo * {
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-portable, #links-nav-click {
+    height: 2vh;
+}
+
+#nav-portable-back {
+    border-radius: 3vh;
+}
+
+#nav-portable-back * {
+    pointer-events: none;
+}
+
+#nav-portable-back div {
+    opacity: .8;
+    font-size: 2.2vh;
+    vertical-align: middle;
+    margin-top: 0.3vh;
+}
+
+#links-portable {
+    position: fixed;
+    height: 100vh;
+    width: 85vw;
+    background: var(--bg);
+    font-weight: 600;
+    border-radius: 0 2vh 2vh 0;
+    transition: all .6s;
+    top: 0;
+    left: -85vw;
+    padding: 1.5vh 3vw;
+    color: white;
+    font-family: lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2vh;
+}
+
+#links-portable * {
+    vertical-align: middle;
+}
+
+#links-portable a:hover {
+    background-color: var(--blue);
+}
+
+.links-portable-open {
+    transform: translateX(85vw);
+}
+
+.links-portable-head {
+    padding: 1.5vh 3vw;
+    font-size: 2.5vh;
+    vertical-align: middle;
+    gap: 4vw;
+    justify-content: flex-start;
+}
+
+.links-portable-head img {
+    height: 2.5vh;
+}
+
+.links-portable-link {
+    width: 100%;
+    height: fit-content;
+    gap: 6vw;
+    justify-content: flex-start;
+    border-radius: 3vh;
+    background: transparent;
+    padding: 1.5vh 3vw;
+}
+
+.links-portable-link div {
+    margin-bottom: -0.2vh;
+    position: absolute;
+    left: 14vw;
+}
+
+.links-portable-split {
+    width: calc(100% - 12vw);
+    margin-left: 6vw;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
+    background-color: white;
+    height: 1px;
+}
+
+.links-portable-link * {
+    pointer-events: none;
+}
+
+.links-portable-link img {
+    height: 2vh;
+}
+
+.button-blue, .button-gray, .button-red {
+    padding: 1vh 2vw;
+    gap: 1vw;
+}
+
+.pc {
+    display: none;
+}
+
+.just-modal {
+    width: 66vw;
+    height: 33vh;
+    top: 33vh;
+    left: 17vw;
+}
+
+.popup {
+    width: 90vw;
+    padding: 4vw;
+}

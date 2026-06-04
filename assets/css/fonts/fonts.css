@@ -1,0 +1,31 @@
+@font-face {
+font-family:"lato";
+src:url('../../fonts/lato/Lato-Thin.woff2') format("woff2"),url('../../fonts/lato/Lato-Thin.woff') format("woff"),url('../../fonts/lato/Lato-Thin.ttf') format("opentype");
+font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+}
+
+@font-face {
+font-family:"lato";
+src:url('../../fonts/lato/Lato-Light.woff2') format("woff2"),url('../../fonts/lato/Lato-Light.woff') format("woff"),url('../../fonts/lato/Lato-Light.ttf') format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"lato";
+src:url('../../fonts/lato/Lato-Regular.woff2') format("woff2"),url('../../fonts/lato/Lato-Regular.woff') format("woff"),url('../../fonts/lato/Lato-Regular.ttf') format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"lato";
+src:url('../../fonts/lato/Lato-Bold.woff2') format("woff2"),url('../../fonts/lato/Lato-Bold.woff') format("woff"),url('../../fonts/lato/Lato-Bold.ttf') format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"lato";
+src:url('../../fonts/lato/Lato-Heavy.woff2') format("woff2"),url('../../fonts/lato/Lato-Heavy.woff') format("woff"),url('../../fonts/lato/Lato-Heavy.ttf') format("opentype");
+font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+}
+
+

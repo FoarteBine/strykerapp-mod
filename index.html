@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Stryker Mod" property="og:title"/>
+<meta content="Stryker Defence Inc." property="og:site_name"/>
+<meta content="Pentest workspace in your smartphone" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://cdn.strykerdefence.com/static/img/logos/white_square.png" property="og:image"/>
+<title>Stryker</title>
+<link as="image" href="assets/img/logos/white_border.png" rel="preload icon" type="image/png"/>
+<script defer="">
+    window.progressBarDivs = 4;
+</script>
+<script async="">
+    window.progressBarPercentage = 0;
+    document.body = document.createElement("body");
+    const div = document.createElement("div");
+    div.setAttribute('id', 'progress-bar');
+    document.body.prepend(div);
+    function plusLoad() {
+        document.getElementsByClassName("remove-it")[0].remove();
+        window.progressBarPercentage = window.progressBarPercentage + 1;
+        var calculatedBarWidth = (window.progressBarPercentage / window.progressBarDivs) * 100 + 'vw';
+        var progressBar = document.getElementById("progress-bar");
+        progressBar.style.cssText = 'min-width: ' + calculatedBarWidth + ';';
+        if (window.progressBarPercentage == window.progressBarDivs) {
+            setTimeout(function() { 
+                progressBar.remove();
+                document.getElementsByTagName("body")[0].remove();
+            }, 600);
+        }
+        return true
+    }
+</script>
+<link as="style" href="assets/css/fonts/fonts.css" referrerpolicy="no-referrer" rel="preload stylesheet" type="text/css"/>
+<link as="font" href="assets/fonts/lato/Lato-Regular.woff2" rel="preload" type="font/woff2"/>
+<link as="font" href="assets/fonts/lato/Lato-Bold.woff2" rel="preload" type="font/woff2"/>
+<link as="font" href="assets/fonts/lato/Lato-Light.woff2" rel="preload" type="font/woff2"/>
+<link as="font" href="assets/fonts/lato/Lato-Heavy.woff2" rel="preload" type="font/woff2"/>
+<link as="font" href="assets/fonts/lato/Lato-Thin.woff2" rel="preload" type="font/woff2"/>
+<link as="style" href="assets/css/base/base.both.css" rel="preload stylesheet" type="text/css"/>
+<link as="style" href="assets/css/base/base.css" media="screen and (min-width: 992px)" rel="preload stylesheet" type="text/css"/>
+<link as="style" href="assets/css/base/base.portable.css" media="screen and (max-width: 992px)" rel="preload stylesheet" type="text/css"/>
+<link as="style" href="assets/css/homepage/home.both.css" rel="preload stylesheet" type="text/css"/>
+<link as="style" href="assets/css/homepage/home.css" media="screen and (min-width: 992px)" rel="preload stylesheet" type="text/css"/>
+<link as="style" href="assets/css/homepage/home.portable.css" media="screen and (max-width: 992px)" rel="preload stylesheet" type="text/css"/>
+<link as="image" href="assets/img/logos/white.svg" rel="preload"/>
+<link as="image" href="assets/img/home/bg.svg" rel="preload"/>
+<link as="image" href="assets/img/home/front_transp.png" rel="preload"/>
+<link as="image" href="assets/img/home/back.png" rel="preload"/>
+<link as="image" href="assets/img/home/main.png" rel="preload"/>
+<link as="image" href="assets/img/home/arrow_bottom.svg" rel="preload"/>
+<link as="image" href="assets/img/home/arrow_left.svg" rel="preload"/>
+<link as="image" href="assets/img/home/arrow_right.svg" rel="preload"/>
+<link as="image" href="assets/img/home/arrow_back.svg" rel="preload"/>
+<link as="image" href="assets/img/home/crown.svg" rel="preload"/>
+<link as="image" href="assets/img/home/download.svg" rel="preload"/>
+<link as="image" href="assets/img/home/github.svg" rel="preload"/>
+<link as="image" href="assets/img/home/mail.svg" rel="preload"/>
+<link as="image" href="assets/img/home/menu.svg" rel="preload"/>
+<link as="image" href="assets/img/home/profile.svg" rel="preload"/>
+<link as="image" href="assets/img/home/telegram.svg" rel="preload"/>
+<link as="image" href="assets/img/home/wiki.svg" rel="preload"/>
+<link as="image" href="assets/img/home/door.svg" rel="preload"/>
+<link as="image" href="assets/img/home/user.svg" rel="preload"/>
+<link as="image" href="assets/img/home/password.svg" rel="preload"/>
+<link as="image" href="assets/img/home/google.svg" rel="preload"/>
+<link as="image" href="assets/img/icons/cross.svg" rel="preload"/>
+<link as="image" href="assets/img/home/user.svg" rel="preload"/>
+<link as="image" href="assets/img/home/key.svg" rel="preload"/>
+<link as="image" href="assets/media/features/1_EgDS2ji.png" rel="preload"/>
+<link as="image" href="assets/media/features/2_3dLaKKg.png" rel="preload"/>
+<link as="image" href="assets/media/features/3_8JvEuqD.png" rel="preload"/>
+<link as="image" href="assets/media/features/4_J5DPqjU.png" rel="preload"/>
+<link as="image" href="assets/media/features/5_UXOswsb.png" rel="preload"/>
+<link as="image" href="assets/media/features/6_5NNK8JF.png" rel="preload"/>
+<link as="image" href="assets/media/features/7_uaXZKS1.png" rel="preload"/>
+<link as="image" href="assets/media/features/8_uqyZOJP.png" rel="preload"/>
+<script async="" src="assets/other/gtag/js"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TG7BMQ1LLT');
+	</script>
+</head>
+<body>
+<nav class="flex-row-center">
+<img class="portable" id="nav-portable" src="assets/img/home/menu.svg"/>
+<a class="flex-row-center" href="/" id="logo">
+<img class="pc" src="assets/img/logos/white.svg"/>
+<p>Stryker</p>
+</a>
+<div class="flex-row-center" id="right-nav">
+<div class="pc flex-row-center" id="links">
+<a class="flex-row-center" href="#features">
+<div>Features</div>
+</a>
+
+<a class="flex-row-center" href="#faq">
+<div>FAQ</div>
+</a>
+</div>
+<div class="portable" id="links-portable">
+<a class="links-portable-head flex-row-center" id="nav-portable-back">
+<img src="assets/img/home/arrow_back.svg"/>
+<div>Menu</div>
+</a>
+<div class="links-portable-head flex-row-center">
+<div>Navigation</div>
+</div>
+<a class="links-portable-link flex-row-center" href="#features">
+<img src="assets/img/navs/1.svg"/>
+<div>Features</div>
+</a>
+</a>
+<a class="links-portable-link flex-row-center" href="#faq">
+<img src="assets/img/navs/4.svg"/>
+<div>FAQ</div>
+</a>
+<div class="links-portable-split"></div>
+<div class="links-portable-split"></div>
+<div class="links-portable-head flex-row-center">
+<div>Contact us</div>
+</div>
+<a class="links-portable-link flex-row-center" href="/cdn-cgi/l/email-protection#7a090f0a0a15080e3a090e0803111f085415141f">
+<img src="assets/img/navs/7.svg"/>
+<div>Email</div>
+</a>
+<a class="links-portable-link flex-row-center" href="https://t.me/strykerapp">
+<img src="assets/img/navs/8.svg"/>
+<div>Telegram</div>
+</a>
+</div>
+</div>
+</nav>
+<div id="top">
+<div class="bg"></div>
+<div id="top-left">
+<img class="portable" id="top-left-logo" src="assets/img/logos/white.svg"/>
+<div id="top-left-text" style="color: #c54d4d;"><b>Stryker Mod</b> - Working servers and<br/> free premium.</div>
+<div class="button-row flex-row-center">
+    <a class="button-gray flex-row-center" href="https://github.com/FoarteBine/strykerapp-mod/releases">
+        <img src="assets/img/home/download.svg"/>
+        <p>Download</p>
+    </a>
+    <a class="button-gray flex-row-center" href="https://github.com/FoarteBine/strykerapp-mod" style="margin-left: 1rem;">
+        <img src="assets/img/home/github.svg"/>
+        <p>Source code</p>
+    </a>
+</div>
+</div>
+<div class="pc" id="top-right">
+<img id="phone-back" src="assets/img/home/back.png"/>
+<div id="phone-front">
+<img src="assets/img/home/front_transp.png"/>
+<div id="phone-content">
+<img src="assets/img/home/main.png"/>
+</div>
+</div>
+</div>
+<div class="bg-bottom-fade"></div>
+</div>
+<script data-cfasync="false" src="assets/js/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script class="remove-it">
+plusLoad();
+</script>
+<div class="full-block" id="features">
+<div class="bg-color-only"></div>
+<div class="bg" style="opacity: .3"></div>
+<div class="content-box" id="features-content-box">
+<h3>Features</h3>
+<div class="phone">
+<img id="feature-phone" src="assets/img/home/front_transp.png"/>
+<div id="feature-screen">
+<img class="feature-img" data-id="8" src="assets/media/features/8_uqyZOJP.png" style="transform: translateX(-100%);"/>
+<img class="feature-img" data-id="1" src="assets/media/features/1_EgDS2ji.png"/>
+<img class="feature-img" data-id="2" src="assets/media/features/2_3dLaKKg.png" style="transform: translateX(100%);"/>
+</div>
+<div class="pc portable" id="feature-phone-bank">
+<img class="feature-img" data-id="1" src="assets/media/features/1_EgDS2ji.png"/><img class="feature-img" data-id="2" src="assets/media/features/2_3dLaKKg.png"/><img class="feature-img" data-id="3" src="assets/media/features/3_8JvEuqD.png"/><img class="feature-img" data-id="4" src="assets/media/features/4_J5DPqjU.png"/><img class="feature-img" data-id="5" src="assets/media/features/5_UXOswsb.png"/><img class="feature-img" data-id="6" src="assets/media/features/6_5NNK8JF.png"/><img class="feature-img" data-id="7" src="assets/media/features/7_uaXZKS1.png"/><img class="feature-img" data-id="8" src="assets/media/features/8_uqyZOJP.png"/>
+</div>
+</div>
+<div class="flex-row-center" id="features-bulbs">
+<div class="feature-bulb" id="1"></div>
+<div class="feature-bulb" id="2"></div>
+<div class="feature-bulb" id="3"></div>
+<div class="feature-bulb" id="4"></div>
+<div class="feature-bulb" id="5"></div>
+<div class="feature-bulb" id="6"></div>
+<div class="feature-bulb" id="7"></div>
+<div class="feature-bulb" id="8"></div>
+<div id="features-bulbs-runner" style="left: 0; min-width: 1vh;"></div>
+</div>
+<div class="flex-row-center" id="features-slider">
+<div class="feature" data-id="8">
+<h3>RScan</h3>
+<p>Scan router for vulnerabilities (20+) and default password via range or IP mask! Report generation and multi-thread.</p>
+<div class="features-bg-left"></div>
+</div>
+<div class="feature" data-id="1" id="feature-active">
+<h3>Wifi scanner</h3>
+<p>The most advanced and permissionless scanner.
+
+Detect model, channel, vendor in a second!</p>
+</div>
+<div class="feature" data-id="2">
+<h3>WiFi vulnerabilities checker</h3>
+<p>Check all common wifi vulnerabilities with your phone! Launch attack with a click!</p>
+<div class="features-bg-right"></div>
+</div>
+<div class="pc portable" id="features-bank">
+<div class="feature" data-bank-id="1">
+<h3>Wifi scanner</h3>
+<p>The most advanced and permissionless scanner.
+
+Detect model, channel, vendor in a second!</p>
+</div>
+<div class="feature" data-bank-id="2">
+<h3>WiFi vulnerabilities checker</h3>
+<p>Check all common wifi vulnerabilities with your phone! Launch attack with a click!</p>
+</div>
+<div class="feature" data-bank-id="3">
+<h3>Local network scanner</h3>
+<p>Detect vendor, OS, services, device names, types and smartphone model.</p>
+</div>
+<div class="feature" data-bank-id="4">
+<h3>Device vulnerabilities checker</h3>
+<p>Detect, brute and exploit most common vulnerabilities in one click!</p>
+</div>
+<div class="feature" data-bank-id="5">
+<h3>VNC Server</h3>
+<p>Select and install your preferred multifunctional graphic environment within a minute.</p>
+</div>
+<div class="feature" data-bank-id="6">
+<h3>Exploit manager</h3>
+<p>Launch personalized exploits or modify the default ones through a specialized wizard.</p>
+</div>
+<div class="feature" data-bank-id="7">
+<h3>SearchSploit</h3>
+<p>Search new exploits by keywords and download them in one click. Create your personalized setup.</p>
+</div>
+<div class="feature" data-bank-id="8">
+<h3>RScan</h3>
+<p>Scan router for vulnerabilities (20+) and default password via range or IP mask! Report generation and multi-thread.</p>
+</div>
+</div>
+<img id="features-arrow-left" src="assets/img/home/arrow_left.svg"/>
+<img id="features-arrow-right" src="assets/img/home/arrow_right.svg"/>
+</div>
+</div>
+<div class="bg-bottom-fade" style="background: linear-gradient(to top, var(--bg) 20%, transparent 100%);"></div>
+</div>
+<script class="remove-it">
+plusLoad();
+</script>
+<script class="remove-it">
+plusLoad();
+</script>
+<div class="full-block" id="resources-faq">
+<div class="bg-top-fade" style="z-index: 0;"></div>
+<div class="bg-color-only"></div>
+<div class="bg" style="opacity: .5"></div>
+<div class="content-box-h" id="resources-faq-cont">
+<div class="content-box" id="wiki">
+<div class="content-box-h" style="gap: 2vh; flex-direction: row;">
+<div class="content-box" style="align-items: stretch; gap: 2vh;">
+</a>
+</div>
+</div>
+</div>
+<div class="content-box" id="faq">
+<h3 style="text-align: center; width: 100%;">FAQ</h3>
+<div id="faq-box">
+<div class="faq-head" style="border-radius: 2vh 2vh 0 0 !important;">
+<p>What is Stryker?</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body"><b>Stryker</b> is a new app for pentest with a smartphone. <br/>It is fully interactive and differs in small size and great functionality from competitors.<br/>Unlike other similar developments, no special knowledge and skills are required.</div>
+<div class="faq-head">
+<p>How to install?</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body">The installation process is simple and is completed by following a step-by-step procedure.
+
+Just follow the instructions on the welcome screens.</div>
+<div class="faq-head">
+<p>How it Works?</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body">Stryker is not only an application but also an <b>Alpine Linux</b>!
+
+The application interacts and processes the output from the Alpine environment and displays a clear result.</div>
+<div class="faq-head">
+<p>I have an error</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body">Since all phones are different, it is impossible to guarantee that all attacks will work on your device.<br/>If you have an error, please open an issue at <a href="https://github.com/FoarteBine/strykerapp-mod/issues">https://github.com/FoarteBine/strykerapp-mod/issues</a>.</div>
+<div class="faq-head">
+<p>How to contact?</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body">If you have any errors or questions, please open an issue at <a href="https://github.com/FoarteBine/strykerapp-mod/issues">https://github.com/FoarteBine/strykerapp-mod/issues</a>.</div>
+<div class="faq-head" style="border-radius: 0 0 2vh 2vh; border-bottom: 1px solid white;">
+<p>What are the minimal requirements?</p>
+<img src="assets/img/home/arrow_bottom.svg"/>
+</div>
+<div class="faq-body faq-wb">Android 8.0+ (required)
+
+<br/>
+
+Root (required)
+
+<br/>
+
+Qualcomm CPU (optimal)</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="assets/js/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script class="remove-it">
+plusLoad();
+</script>
+
+<footer class="flex-column-center">
+<b>FoarteBine</b>
+<a>All rights reserved © 2026</a>
+</footer>
+<script src="assets/js/includes/jquery.min.js">
+</script>
+<script src="assets/js/includes/js.cookie.min.js">
+</script>
+<script src="assets/js/includes/hammer.min.js">
+</script>
+<script src="assets/js/homepage/home.js">
+</script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"b01a887e89514140965af23700f475ba","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" src="assets/other/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"></script>
+</body>
+</html>
